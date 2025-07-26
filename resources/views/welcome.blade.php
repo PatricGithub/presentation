@@ -355,7 +355,7 @@
         <div class="slide">
             <h1>Research Question</h1>
             <ul>
-                <li>If experts in chess use analogies to transfer solutions from past episodes (Linhares and Brum, 2007), these analogies will contain less perceptual overlap and will rely more on higher-order relations, hence relying on the structural properties of the target chess configuration, rather than partial relational matches.</li>
+                <li>Do experts in chess use analogies to transfer solutions from past episodes (Linhares and Brum, 2007) and will these analogies contain less perceptual overlap and will they rely more on higher-order relations, hence relying on the structural properties of the target chess configuration, rather than partial relational matches?</li>
             </ul>
             <br>
             <h2>Hypotheses</h2>
