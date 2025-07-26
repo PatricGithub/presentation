@@ -285,7 +285,7 @@
     <div class="presentation-container">
         <!-- Slide 1: Title -->
         <div class="slide active">
-            <h1>Analogy <br> Generation <br>in Chess</h1>
+            <h1 style="font-size: 6.5rem">Analogy <br> Generation <br>in Chess</h1>
             <p class="author"><strong>Patric Pfoertner & Penka Hristova</strong><br>
             Department of Cognitive Science and Psychology<br>
             New Bulgarian University, Sofia, Bulgaria</p> 
@@ -293,9 +293,9 @@
 
         <!-- Slide 2: The Fundamental Question -->
         <div class="slide">
-            <h1>How Does Expertise Transform Analogical Reasoning?</h1>
+            <h1>Central Debate in Chess Cognition</h1>
             <div class="highlight">
-                <h3>Central Debate in Chess Cognition:</h3>
+                <h3>Two Point of Views</h3>
                 <ul>
                     <li><strong>Pattern Recognition View</strong>: Experts recognize chunks/templates (Chase & Simon, 1973)</li>
                     <li><strong>Experience Recognition View</strong>: Experts use analogies based on abstract relations (Linhares & Brum, 2007)</li>
@@ -304,7 +304,7 @@
             <p><strong>Key Question</strong>: Do chess experts rely on perceptual patterns or structural relationships when generating analogies?</p>
         </div>
 
-        <!-- Slide 3: Theoretical Framework -->
+        <!-- Slide 3: Theoretical Framework 
         <div class="slide">
             <h1>Analogical Reasoning: Surface vs. Structure</h1>
             <div class="two-column">
@@ -325,10 +325,10 @@
                 </div>
             </div>
         </div>
-
+-->
         <!-- Slide 4: Chess Expertise Theories -->
         <div class="slide">
-            <h1>Competing Accounts of Chess Mastery</h1>
+            <h1>The Competing Accounts</h1>
             <div class="two-column">
                 <div>
                     <h3>Chunking/Template Theory</h3>
@@ -347,23 +347,22 @@
                     </ul>
                 </div>
             </div>
+            <br>
             <p class="subtitle"><strong>Our Study</strong>: First to use analogy generation task to test these theories</p>
         </div>
 
         <!-- Slide 5: Research Questions & Hypotheses -->
         <div class="slide">
-            <h1>Research Questions</h1>
+            <h1>Research Question</h1>
             <ul>
-                <li><strong>RQ1</strong>: Do experts generate more structurally-based analogies than novices?</li>
-                <li><strong>RQ2</strong>: What is the source of expert analogies - memory or imagination?</li>
-                <li><strong>RQ3</strong>: How do perceptual and structural features relate to confidence in analogies?</li>
+                <li>If experts in chess use analogies to transfer solutions from past episodes (Linhares and Brum, 2007), these analogies will contain less perceptual overlap and will rely more on higher-order relations, hence relying on the structural properties of the target chess configuration, rather than partial relational matches.</li>
             </ul>
             <br>
             <h2>Hypotheses</h2>
             <ul>
                 <li><strong>H1</strong>: Experts will generate more analogies with less perceptual overlap</li>
                 <li><strong>H2</strong>: Experts will retrieve analogies from memory; novices from fantasy</li>
-                <li><strong>H3</strong>: Confidence correlates with structural, not surface similarity</li>
+                <li><strong>H3</strong>: Experts will be more confident and satisfied with their analogies, steaming from higher-order relational commonalities</li>
             </ul>
         </div>
 
@@ -419,49 +418,45 @@
                     </div>
                     <div class="metric-description">
                         <strong>1. Pixel-by-pixel overlap</strong><br>
-                        Identical pieces in identical positions (with/without empty squares)
+                        Identical pieces in identical positions
                     </div>
                 </div>
                  
             </div>
-            <p class="subtitle"><em>First study to quantify surface similarity computationally in chess</em></p>
         </div>
-
-         <!-- Slide 8: Method - Measuring Perceptual Overlap -->
-        <div class="slide">
+<div class="slide">
             <h1>Novel Objective Metrics</h1>
             <div class="metrics-grid"> 
                 
                 <div class="metric-item">
                     <div class="metric-visual">
-                        <img src="{{ asset('image-2.png')}}" alt="Piece configuration fidelity visualization" class="metric-image">
+                        <img src="{{ asset('image-2.png')}}" alt="Non-empty pixel overlap visualization" class="metric-image">
                     </div>
                     <div class="metric-description">
-                        <strong>2. Piece configuration fidelity</strong><br>
-                        Same distribution of piece types
-                    </div>
-                </div> 
-            </div>
-            <p class="subtitle"><em>First study to quantify surface similarity computationally in chess</em></p>
-        </div>
-
-         <!-- Slide 8: Method - Measuring Perceptual Overlap -->
-        <div class="slide">
-            <h1>Novel Objective Metrics</h1>
-            <div class="metrics-grid"> 
-                
-                <div class="metric-item">
-                    <div class="metric-visual">
-                        <img src="{{ asset('image-3.png')}}" alt="Non-empty pixel overlap visualization" class="metric-image">
-                    </div>
-                    <div class="metric-description">
-                        <strong>3. Non-empty pixel overlap</strong><br>
+                        <strong>2. Non-empty pixel overlap</strong><br>
                         Focus on piece positions only
                     </div>
                 </div>
             </div>
-            <p class="subtitle"><em>First study to quantify surface similarity computationally in chess</em></p>
-        </div>
+         </div>
+         <!-- Slide 8: Method - Measuring Perceptual Overlap -->
+        <div class="slide">
+            <h1>Novel Objective Metrics</h1>
+            <div class="metrics-grid"> 
+                
+                <div class="metric-item">
+                    <div class="metric-visual">
+                        <img src="{{ asset('image-3.png')}}" alt="Piece configuration fidelity visualization" class="metric-image">
+                    </div>
+                    <div class="metric-description">
+                        <strong>3. Piece configuration fidelity</strong><br>
+                        Same distribution of piece types
+                    </div>
+                </div> 
+            </div>
+         </div>
+
+         <!-- Slide 8: Method - Measuring Perceptual Overlap -->
 
         <!-- Slide 9: Results - Analogy Generation Frequency -->
         <div class="slide">
@@ -562,8 +557,7 @@
                     <ul>
                         <li>Advanced: Mean rank = 3.87</li>
                         <li>Novices: Mean rank = 2.60</li>
-                        <li><em>U</em> = 91,934.50, <em>p</em> < .001</li>
-                        <li><em>r</em> = 0.64</li>
+                        <li><em>U</em> = 91,934.50, <em>p</em> < .001</li> 
                     </ul>
                 </div>
                 <div>
@@ -571,12 +565,10 @@
                     <ul>
                         <li>Advanced: Mean rank = 3.74</li>
                         <li>Novices: Mean rank = 2.69</li>
-                        <li><em>U</em> = 82,177.50, <em>p</em> < .001</li>
-                        <li><em>r</em> = 0.47</li>
+                        <li><em>U</em> = 82,177.50, <em>p</em> < .001</li> 
                     </ul>
                 </div>
-            </div>
-            <p><strong>Correlation</strong>: Confidence × Satisfaction: <em>rs</em> = 0.44, <em>p</em> < .001</p>
+            </div> 
         </div>
 
         <!-- Slide 14: Results - Key Correlations -->
@@ -618,97 +610,20 @@
 
         <!-- Slide 16: Summary of Findings -->
         <div class="slide">
-            <h1>Evidence for Experience Recognition</h1>
-            <ol>
+            <h1>Support for Experience Recognition</h1>
+            <ul>
                 <li><strong>Experts generate 70% more analogies</strong> than novices</li>
                 <li><strong>Memory-based retrieval</strong> (64%) vs. fantasy construction</li>
                 <li><strong>Lower perceptual overlap</strong> (78% vs. 81% pixel match)</li>
                 <li><strong>Greater abstraction</strong>: 30% fewer pieces used</li>
                 <li><strong>Higher confidence</strong> despite lower surface similarity</li>
                 <li><strong>Faster generation</strong> of structurally complex analogies</li>
-            </ol>
-            <p class="subtitle"><strong>Conclusion</strong>: Expertise transforms analogical reasoning from surface-based to structure-based processing</p>
+            </ul>
+            <p class="subtitle"><strong>Conclusion</strong>: Expertise may transform analogical reasoning from surface-based to structure-based processing</p>
         </div>
-
-        <!-- Slide 17: Theoretical Implications -->
-        <div class="slide">
-            <h1>Supporting Structural Accounts</h1>
-            <h3>Challenges to Chunking Theory:</h3>
-            <ul>
-                <li>POS patterns insufficient to explain results</li>
-                <li>Abstract relations, not proximity, drive expert analogies</li>
-            </ul>
-            <h3>Support for Experience Recognition:</h3>
-            <ul>
-                <li>Direct retrieval of strategically similar episodes</li>
-                <li>Minimal perceptual overlap between analogies</li>
-            </ul>
-            <h3>Broader Implications:</h3>
-            <ul>
-                <li>Experts overcome the "retrieval gap"</li>
-                <li>Domain knowledge enables structural encoding</li>
-                <li>Aligns with naturalistic studies (Dunbar & Blanchette, 2001)</li>
-            </ul>
-        </div>
-
-        <!-- Slide 18: Methodological Contributions -->
-        <div class="slide">
-            <h1>Advancing Analogy Research</h1>
-            <h3>Novel Contributions:</h3>
-            <ol>
-                <li><strong>First analogy generation study</strong> in chess expertise</li>
-                <li><strong>Objective computational metrics</strong> for surface similarity</li>
-                <li><strong>Source attribution</strong> (memory vs. fantasy) methodology</li>
-                <li><strong>Multiple convergent measures</strong> of structural reasoning</li>
-            </ol>
-            <h3>Advantages over similarity judgment tasks:</h3>
-            <ul>
-                <li>Captures spontaneous retrieval</li>
-                <li>Reveals knowledge organization</li>
-                <li>Ecologically valid</li>
-            </ul>
-        </div>
-
-        <!-- Slide 19: Limitations & Future Directions -->
-        <div class="slide">
-            <h1>Limitations & Next Steps</h1>
-            <h3>Limitations:</h3>
-            <ul>
-                <li>Self-report of memory source (familiarity vs. episodic?)</li>
-                <li>Gender imbalance (94% male)</li>
-                <li>Puzzle-based expertise classification</li>
-            </ul>
-            <h3>Future Research:</h3>
-            <ol>
-                <li>Developmental trajectory of structural reasoning</li>
-                <li>Cross-domain generalization</li>
-                <li>Neural correlates of expert analogy</li>
-                <li>Training interventions for structural encoding</li>
-            </ol>
-        </div>
-
-        <!-- Slide 20: Conclusions -->
-        <div class="slide">
-            <h1>Key Takeaways</h1>
-            <p><strong>Chess expertise fundamentally transforms analogical reasoning</strong></p>
-            <ul>
-                <li>From <strong>surface features</strong> to <strong>structural relations</strong></li>
-                <li>From <strong>imagination</strong> to <strong>memory retrieval</strong></li>
-                <li>From <strong>literal copying</strong> to <strong>abstract transfer</strong></li>
-            </ul>
-            <h3>Practical Implications:</h3>
-            <ul>
-                <li>Chess instruction should emphasize relational understanding</li>
-                <li>Expert knowledge = interconnected abstract schemas</li>
-                <li>Analogical reasoning as core to expertise, not peripheral</li>
-            </ul>
-            <p class="subtitle"><em>"The very blue that fills the whole sky of cognition"</em> - Hofstadter (2001)</p>
-        </div>
-
-        <!-- Slide 21: AI-Assisted Linguistic Analysis -->
-        <div class="slide">
-            <h1>Analyzing Verbal Explanations of Analogies</h1>
-            <p><strong>Challenge</strong>: 299 German-language verbal responses requiring systematic analysis across multiple cognitive dimensions</p>
+ <div class="slide">
+            <h1>Verbal Explanations of Analogies</h1>
+            <p>299 German-language verbal responses were systematically analysed across multiple cognitive dimensions</p>
             <div class="highlight">
                 <h3>Solution: AI-assisted content analysis using Qwen3-235B-A22B-07-25</h3>
                 <ul>
@@ -722,37 +637,72 @@
         </div>
 
         <!-- Slide 22: Measurement Framework -->
-        <div class="slide">
-            <h1>Six Cognitive-Linguistic Dimensions</h1>
-            <div class="two-column">
-                <div>
-                    <h3>Categorical Dimensions:</h3>
-                    <ol>
-                        <li><strong>Structural vs. Surface Focus</strong>: Abstract relations vs. concrete locations</li>
-                        <li><strong>Abstraction Level</strong>: General principles vs. specific descriptions</li>
-                        <li><strong>Strategic vs. Tactical</strong>: Long-term planning vs. immediate threats</li>
-                        <li><strong>Description Type</strong>: Relational coordination vs. positional placement</li>
-                        <li><strong>Terminology Sophistication</strong>: Advanced vs. basic vs. informal</li>
-                        <li><strong>Reasoning Complexity</strong>: Multi-step vs. simple vs. minimal</li>
-                    </ol>
-                </div>
-                <div>
-                    <h3>Quantitative Indicators:</h3>
-                    <ul>
-                        <li>Chess terms count</li>
-                        <li>Abstract concepts count</li>
-                        <li>Causal reasoning words</li>
-                        <li>Positional references</li>
-                        <li>Composite expert features (0-6)</li>
-                        <li>Language complexity score</li>
-                    </ul>
-                </div>
+       <div class="slide">
+        <h1>Categorical Dimensions</h1>
+        <div class="two-column">
+            <div>
+                <ul>
+                    <li><strong>Structural vs. Surface Focus</strong>: 
+                        <br><em>Structural:</em> Piece relationships, strategic purposes, abstract patterns
+                        <br><em>Surface:</em> Piece locations, colors, specific squares without context
+                        <br><em>Mixed:</em> Combination of both approaches
+                    </li>
+                    <li><strong>Abstraction Level</strong>: 
+                        <br><em>Abstract:</em> General principles, strategic concepts, theoretical frameworks
+                        <br><em>Concrete:</em> Specific pieces, exact positions, literal observations
+                        <br><em>Mixed:</em> Abstract concepts with concrete details
+                    </li>
+                    <li><strong>Strategic vs. Tactical Orientation</strong>: 
+                        <br><em>Strategic:</em> Long-term planning, positional concepts, general principles
+                        <br><em>Tactical:</em> Short-term combinations, specific moves, immediate threats
+                        <br><em>Mixed:</em> Both strategic and tactical elements
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><strong>Description Type</strong>: 
+                        <br><em>Relational:</em> How pieces work together, coordinate, support each other
+                        <br><em>Positional:</em> Where pieces are located without explaining relationships
+                        <br><em>Mixed:</em> Combination of relational and positional elements
+                    </li>
+                    <li><strong>Chess Terminology Sophistication</strong>: 
+                        <br><em>Sophisticated:</em> Advanced chess terminology used correctly and precisely
+                        <br><em>Basic:</em> Standard chess terms used simply
+                        <br><em>Informal:</em> Casual language, non-standard terms, colloquial expressions
+                    </li>
+                    <li><strong>Reasoning Complexity</strong>: 
+                        <br><em>Complex:</em> Multi-step reasoning, multiple factors, sophisticated analysis
+                        <br><em>Simple:</em> Basic cause-effect reasoning, few factors considered
+                        <br><em>Minimal:</em> Little to no reasoning, primarily descriptive
+                    </li>
+                </ul>
             </div>
         </div>
-
+    </div>
+    <div class="slide">
+        <h1>Quantitative Language Indicators</h1>
+        <div class="two-column">
+            <div>
+                <ul>
+                    <li><strong>Chess Terms Count</strong>: Number of technical chess vocabulary items <span class="emphasis">(e.g., German: "Gabel," "Fesselung," "Bauernstruktur")</span></li>
+                    <li><strong>Causal Words Count</strong>: Number of reasoning indicators showing logical connections <span class="emphasis">(e.g., German: "weil," "deshalb," "führt zu")</span></li>
+                    <li><strong>Abstract Concepts Count</strong>: Number of strategic/positional concepts referenced <span class="emphasis">(e.g., "Kontrolle," "Druck," "Schwäche," "Initiative")</span></li>
+                    <li><strong>Positional References Count</strong>: Number of specific location references <span class="emphasis">(e.g., "auf h8," "hier," "dort")</span></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                     <li><strong>Total Expert Features</strong>: <span class="scale">Sum of binary expert indicators across all six dimensions (0-6 scale)</span></li>
+                    <li><strong>Language Complexity Score</strong>: Composite measure combining chess terms, causal words, and abstract concepts</li>
+                    <li><strong>Primary Classification</strong>: Overall expert-like vs. novice-like vs. intermediate classification based on response patterns</li>
+                </ul>
+            </div>
+        </div>
+    </div>
         <!-- Slide 23: Dramatic Linguistic Differences -->
         <div class="slide">
-            <h1>Key Findings: Categorical Dimensions</h1>
+            <h1>Results Categorical Dimensions</h1>
             <div class="highlight">
                 <h3>Structural Focus:</h3>
                 <ul>
@@ -779,8 +729,7 @@
                     </ul>
                 </div>
             </div>
-            <p class="subtitle"><em>Effect sizes approach theoretical maximums</em></p>
-        </div>
+         </div>
 
         <!-- Slide 24: Quantitative Language Markers -->
         <div class="slide">
@@ -811,7 +760,6 @@
                     </ul>
                 </div>
             </div>
-            <p class="subtitle"><em>Near-complete separation between groups</em></p>
         </div>
 
         <!-- Slide 25: Convergent Evidence -->
@@ -832,9 +780,77 @@
                 (The horse jumps there)</li>
             </ul>
             <p class="subtitle"><strong>Key Finding</strong>: Language analysis confirms experts encode analogies through abstract relations, not surface patterns</p>
-            <p><strong>All effect sizes V > 0.78 = "exceptionally rare in psychological research"</strong></p>
+            <p><strong>All effect sizes V > 0.78</strong></p>
         </div>
     </div>
+        <!-- Slide 17: Theoretical Implications -->
+        <div class="slide">
+            <h1>Supporting Structural Accounts</h1>
+            <h3>Challenges to Chunking Theory:</h3>
+            <ul>
+                <li>POS patterns insufficient to explain results</li>
+                <li>Abstract relations, not proximity, drive expert analogies</li>
+            </ul>
+            <h3>Support for Experience Recognition:</h3>
+            <ul>
+                <li>Direct retrieval of strategically similar episodes</li>
+                <li>Minimal perceptual overlap between analogies</li>
+            </ul>
+            <h3>Broader Implications:</h3>
+            <ul>
+                <li>Domain knowledge enables structural encoding</li>
+                <li>Aligns with naturalistic studies (Dunbar & Blanchette, 2001)</li>
+            </ul>
+        </div>
+
+        <!-- Slide 18: Methodological Contributions -->
+        <div class="slide">
+            <h1>Novel Contributions</h1> 
+            <ul>
+                <li><strong>First analogy generation study</strong> in chess expertise</li>
+                <li><strong>Objective computational metrics</strong> for surface similarity</li>
+                <li><strong>Source attribution</strong> (memory vs. fantasy) methodology</li>
+                <li><strong>Multiple convergent measures</strong> of structural reasoning</li>
+            </ul> 
+        </div>
+
+        <!-- Slide 19: Limitations & Future Directions -->
+        <div class="slide">
+            <h1>Limitations & Next Steps</h1> 
+            <ul>
+                <li>Self-report of memory source (familiarity vs. episodic?)</li>
+                <li>Gender imbalance (94% male)</li>
+                <li>Puzzle-based expertise classification</li>
+            </ul>
+            <h3>Future Research:</h3>
+            <ul>
+                <li>Developmental trajectory of structural reasoning</li>
+                <li>Cross-domain generalization</li>
+                <li>Neural correlates of expert analogy</li>
+                <li>Training interventions for structural encoding</li>
+            </ul>
+        </div>
+
+        <!-- Slide 20: Conclusions -->
+        <div class="slide">
+            <h1>Key Takeaways</h1>
+            <p><strong>Chess expertise fundamentally transforms analogical reasoning</strong></p>
+            <ul>
+                <li>From <strong>surface features</strong> to <strong>structural relations</strong></li>
+                <li>From <strong>imagination</strong> to <strong>memory retrieval</strong></li>
+                <li>From <strong>literal copying</strong> to <strong>abstract transfer</strong></li>
+            </ul>
+            <h3>Practical Implications:</h3>
+            <ul>
+                <li>Chess instruction should emphasize relational understanding</li>
+                <li>Expert knowledge = interconnected abstract schemas</li>
+                <li>Analogical reasoning as core to expertise, not peripheral</li>
+            </ul>
+            <p class="subtitle"><em>"The very blue that fills the whole sky of cognition"</em> - Hofstadter (2001)</p>
+        </div>
+
+        <!-- Slide 21: AI-Assisted Linguistic Analysis -->
+       
 
     <div class="navigation">
         <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">Previous</button>
